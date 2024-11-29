@@ -18,16 +18,13 @@
                 new("Apple", 410),
             ];
 
+            var fruits_exits = fruits_bucket.Any(f => f.Price < 100);
+            Console.WriteLine(fruits_exits);
 
-            // var selected_fruits = fruits_bucket
+
+            // Parallel.ForEach(fruits_bucket
             //     .Where(f => f.Price >= 300 && f.Price <= 450)
-            //     .OrderBy(n => n.Price).ToList();
-
-            // Parallel.ForEach(selected_fruits, fruit => Console.WriteLine(fruit.Name));
-
-            Parallel.ForEach(fruits_bucket
-                .Where(f => f.Price >= 300 && f.Price <= 450)
-                .OrderBy(n => n.Price).ToList(), fruit => Console.WriteLine(fruit.Name));
+            //     .OrderBy(n => n.Price).ToList(), fruit => Console.WriteLine(fruit.Name));
         }
     }
 }
