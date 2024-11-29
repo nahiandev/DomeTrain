@@ -4,15 +4,21 @@
     {
         static void Main(string[] args)
         {
-            var fruits_bucket = Fruits.Bucket;
+            var fruits_bucket = Fruits.Instance.Bucket;
+            
+            ICollection<Product> selected_fruits = fruits_bucket
+                .Where(f => f.Price is >= 100 and <= 300)
+                .OrderBy(n => n.Price).ToList();
 
-            var fruits_exits = fruits_bucket.Any(f => f.Price < 100);
-            Console.WriteLine(fruits_exits);
-
-
-            // Parallel.ForEach(fruits_bucket
-            //     .Where(f => f.Price >= 300 && f.Price <= 450)
-            //     .OrderBy(n => n.Price).ToList(), fruit => Console.WriteLine(fruit.Name));
+            int total_price = selected_fruits.Sum(f => f.Price);
+            int total_fruits = selected_fruits.Count;
+            Parallel.ForEach(selected_fruits, fruit =>
+            {
+                Console.WriteLine($"{fruit.Name} -> {fruit.Price}");
+            });
+            Console.WriteLine("-------------------------------------------");
+            Console.WriteLine($"Total fruits: {total_fruits}");
+            Console.WriteLine($"Total price: {total_price}");
         }
     }
 }

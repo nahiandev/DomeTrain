@@ -1,23 +1,25 @@
 namespace DomeTrain;
 
-public class Fruits
+public sealed class Fruits
 {
-    public static readonly List<Product> Bucket =
-    [
-        new("Pineapple", 399),
-        new("Strawberry", 450),
-        new("Blueberry", 520),
-        new("Mango", 475),
-        new("Banana", 410),
-        new("Avocado", 490),
-        new("Coffee", 505),
-        new("Coconut", 430),
-        new("Grape", 540),
-        new("Almond", 525),
-        new("Apple", 410),
-    ];
+    public static readonly Fruits Instance = new Fruits();
+
+    public readonly List<Product> Bucket = new List<Product>
+    {
+        new Product("Pineapple", new Random().Next(100, 500)),
+        new Product("Strawberry", new Random().Next(100, 500)),
+        new Product("Blueberry", new Random().Next(100, 500)),
+        new Product("Mango", new Random().Next(100, 500)),
+        new Product("Banana", new Random().Next(100, 500)),
+        new Product("Avocado", new Random().Next(100, 500)),
+        new Product("Coffee", new Random().Next(100, 500)),
+        new Product("Coconut", new Random().Next(100, 500)),
+        new Product("Grape", new Random().Next(100, 500)),
+        new Product("Almond", new Random().Next(100, 500)),
+        new Product("Apple", new Random().Next(100, 500))
+    };
+
     private Fruits()
     {
-        
     }
 }
