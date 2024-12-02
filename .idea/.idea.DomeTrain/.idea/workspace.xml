@@ -7,7 +7,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73284318-5212-41c0-8526-976068d0a2e9" name="Changes" comment="" />
+    <list default="true" id="73284318-5212-41c0-8526-976068d0a2e9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DomeTrain/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DomeTrain/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DomeTrain/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DomeTrain/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DomeTrain/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DomeTrain/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DomeTrain/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DomeTrain/v17/DocumentLayout.backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DomeTrain/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/DomeTrain/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DomeTrain/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DomeTrain/Program.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,42 +32,46 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "nahiandev"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;nahiandev&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/nahiandev/DomeTrain.git",
-    "accountId": "5e44c95d-af1c-46f7-9a94-0b276a3b2730"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/nahiandev/DomeTrain.git&quot;,
+    &quot;accountId&quot;: &quot;5e44c95d-af1c-46f7-9a94-0b276a3b2730&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/Workspace/C#/DomeTrain/DomeTrain/Fruits.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Workspace/C#/DomeTrain/DomeTrain/Program.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2pX9jiXPf7SowiLJTBJgeCjQYtA" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.DomeTrain.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "application.passwordSafe"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.DomeTrain.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;application.passwordSafe&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="DomeTrain" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -91,6 +102,9 @@
       <updated>1730277414407</updated>
       <workItem from="1730277417255" duration="217000" />
       <workItem from="1732901692856" duration="3023000" />
+      <workItem from="1732905774001" duration="374000" />
+      <workItem from="1732909819457" duration="1697000" />
+      <workItem from="1733044679434" duration="803000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -116,7 +130,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732903560211</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Dummy container">
+      <option name="closed" value="true" />
+      <created>1732906123067</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732906123067</updated>
+    </task>
+    <task id="LOCAL-00005" summary="random fruit bucket">
+      <option name="closed" value="true" />
+      <created>1732911498642</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732911498642</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +157,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="struct" />
     <MESSAGE value="record - immutable data type" />
-    <option name="LAST_COMMIT_MESSAGE" value="record - immutable data type" />
+    <MESSAGE value="Dummy container" />
+    <MESSAGE value="random fruit bucket" />
+    <option name="LAST_COMMIT_MESSAGE" value="random fruit bucket" />
   </component>
 </project>
