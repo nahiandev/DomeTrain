@@ -6,15 +6,18 @@ namespace DomeTrain
     {
         static void Main(string[] args)
         {
-            var fruits_bucket = Fruits.Instance.Bucket.AsQueryable();
-            
-            fruits_bucket.Where(f => f.Price <= 200).ToList().ForEach(Console.WriteLine);
+            Person john = new() { Name = "John", Age = 30 };
 
+            Person alex = new Person { Name = "Alex", Age = 20 };
 
-            var empty = new List<int> { 3, 4,3,6,3,7};
+            Person maria = new("Maria", 25);
 
+            List<Person> list = [];
 
-            empty.ForEach(Console.WriteLine);
+            list.AddRange(john, alex, maria);
+
+            list.OrderBy(static x => x.Age).ToList().
+                ForEach(static p => Console.WriteLine($"{p.Name} - {p.Age}"));
         }
     }
 }
