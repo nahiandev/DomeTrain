@@ -1,23 +1,20 @@
-﻿using System.Text;
-
-namespace DomeTrain
+﻿namespace DomeTrain
 {
     public class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            Person john = new() { Name = "John", Age = 30 };
+            List<int> nums = [0,1,2,3,4,5];
 
-            Person alex = new Person { Name = "Alex", Age = 20 };
+            List<int> ints = [6, 7, 8, 9, 0, 1, 2, 3, 4, 5];
 
-            Person maria = new("Maria", 25);
+            var contains = ListExtension<int>.ContainsRange(ints, nums);
 
-            List<Person> list = [];
+            Console.WriteLine(contains);
 
-            list.AddRange(john, alex, maria);
+            contains = await ListExtension<int>.ContainsRangeAsync(ints, nums);
 
-            list.OrderBy(static x => x.Age).ToList().
-                ForEach(static p => Console.WriteLine($"{p.Name} - {p.Age}"));
+            Console.WriteLine(contains);
         }
     }
 }
