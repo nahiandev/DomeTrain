@@ -1,4 +1,4 @@
-﻿using System.IO.Compression;
+﻿using System.Text;
 
 namespace DomeTrain
 {
@@ -6,12 +6,15 @@ namespace DomeTrain
     {
         static void Main()
         {
-            Instance r = new();
+            string text = "Hello World!";
 
-            r.PrintConsoleBase();
-            r.PrintConsole();
+            var bytes = Encoding.UTF8.GetBytes(text);
 
-            Console.WriteLine(r is Base);
+            Console.WriteLine($"Converted bytes: {string.Join(".", bytes)}");
+
+            string reform_text = Encoding.UTF8.GetString(bytes);
+
+            Console.WriteLine($"Reformed text from bytes: {reform_text}");
         }
     }
 }
