@@ -6,15 +6,11 @@ namespace DomeTrain
     {
         static void Main()
         {
-            string text = "Hello こんにちは世界";
-
-            var bytes = Encoding.UTF32.GetBytes(text);
-
-            Console.WriteLine($"Converted bytes: {string.Join("", bytes)}");
-
-            string reform_text = Encoding.UTF32.GetString(bytes);
-
-            Console.WriteLine($"Reformed text from bytes: {reform_text}");
+            DoStuff(7, 5, (x, y) => x * y);
         }
+
+        private static void DoStuff(int x, int y, Calculate math_ops) => Console.WriteLine(math_ops(x, y));
+
+        delegate int Calculate(int x, int y);
     }
 }
