@@ -1,19 +1,36 @@
 ﻿namespace DomeTrain
+
 {
     class Program
     {
         static void Main()
         { 
-            DoStuff(1, 2, (x, y) => x + y);
+            Lazy<int> lazy = new(static () =>
+            {
+                const int time = 5;
+                for (int i = 0; i < time; i++)
+                {
+                    Thread.Sleep(1000);
+                    Console.WriteLine($"{5 - i} second(s) to generate a random number.");
+                }
 
-            DoStuff(3, 4, (x, y) => x * y);
 
-            DoStuff(7, 6, (x, y) => x * y);
+                return new Random().Next(1, 100);
+            });
 
-            DoStuff(7, 5, (x, y) => Convert.ToInt32(string.Join("", [x, y]))); 
+
+            Console.WriteLine(lazy.Value);
+            Console.WriteLine(lazy.Value);
+            Console.WriteLine(lazy.Value);
+            Console.WriteLine(lazy.Value);
+            Console.WriteLine(lazy.Value);
+            Console.WriteLine(lazy.Value);
+            Console.WriteLine(lazy.Value);
+            Console.WriteLine(lazy.Value);
         }
         
         private static void DoStuff(int x, int y, Calculate math_ops) => Console.WriteLine(math_ops(x, y)); 
+        
         delegate int Calculate(int x, int y);
     }
 }
