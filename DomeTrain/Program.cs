@@ -7,16 +7,21 @@ namespace DomeTrain
     {
         static void Main()
         {
-            // Equivalent to JS self invoking function
-            // var result = ((x, y) => x + y)(4, 8)
+            List<Func<int, int, int>> operations = [Add, Subtract, Multiply, Divide];
 
-            int result = ((Func<int, int, int>) ((x, y) => x + y))(4, 8);
-
-            Console.WriteLine(result);
+            operations.ForEach(action => {
+                Console.WriteLine($"Action name:- {action.Method.Name}, " +
+                    $"Result:- {action(12, 10)}");
+            });
         }
 
-        
-        
+        private static int Multiply(int x, int y) => x * y;
+        private static int Add(int x, int y) => x + y;
+        private static int Subtract(int x, int y) => x - y;
+        private static int Divide(int x, int y) => x / y;
+
+
+
         private static void DoStuff(int x, int y, Calculate math_ops) => Console.WriteLine(math_ops(x, y));
 
         private delegate int Calculate(int x, int y);
