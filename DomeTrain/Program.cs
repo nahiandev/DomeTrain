@@ -4,15 +4,9 @@
     {
         static void Main()
         {
-            List<Func<int, int, int>> operations = [Add, Subtract, Multiply, Divide, Concat];
+            List<string> str_nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 
-            operations.ForEach(action => {
-                Console.WriteLine($"Action name:- {action.Method.Name}, " +
-                    $"Result:- {action(12, 10)}");
-            });
-
-
-            // DoStuff(9, 5, (x, y) => x * 10 + y);
+            List<int> nums = str_nums.Select(int.Parse).ToList();
         }
 
         private static int Multiply(int x, int y) => x * y;
