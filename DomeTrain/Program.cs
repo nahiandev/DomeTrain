@@ -1,51 +1,27 @@
-﻿using System.Runtime.CompilerServices;
-using System.Xml;
-
-namespace DomeTrain
+﻿namespace DomeTrain
 {
     class Program
     {
         static void Main()
         {
-            //string xml_records = """
-            //    <?xml version="1.0" encoding="UTF-8"?>
-            //    <people>
-            //        <person>
-            //            <name>John Doe</name>
-            //            <age>30</age>
-            //        </person>
-            //        <person>
-            //            <name>Jane Smith</name>
-            //            <age>25</age>
-            //        </person>
-            //        <person>
-            //            <name>Bob Johnson</name>
-            //            <age>40</age>
-            //        </person>
-            //    </people> 
-            // """;
+            var sum = EulerSum(3, 5, 100);
 
-            string filename = "people.xml";
+            Console.WriteLine(sum);
+        }
 
-            
+        private static long EulerSum(int x, int y, int limit)
+        {
+            long sum = 0;
 
-            //File.WriteAllText(filename, xml_records);
-
-            XmlDocument doc = new();
-            doc.Load(filename);
-
-
-            XmlNodeList people = doc.SelectNodes("/people/person")!;
-
-
-            foreach(XmlNode node in people)
+            for (int i = 0; i < limit; i++)
             {
-                Console.WriteLine(node["name"]!.InnerText);
-                Console.WriteLine(node["age"]!.InnerText);
-                Console.WriteLine("---------------------");
+                if(i % x is 0 || i % y is 0)
+                {
+                    sum += i;
+                }
             }
 
-
+            return sum;
         }
     }
 }
