@@ -7,7 +7,9 @@ namespace DomeTrain
     {
         static void Main()
         {
-            int result = ((Func<List<int>, int>) (nums => nums.Sum()))([..NumsGen(1000)]);
+            // int result = ((Func<List<int>, int>) (nums => nums.Sum()))([..NumsGen(1000)]);
+
+            int result = NumsGen(1000).Sum();
 
             Console.WriteLine(result);
         }
